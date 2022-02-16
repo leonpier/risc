@@ -34,7 +34,7 @@
                         <tr>
                             <td class="text-left">Nuevo</td>
                             <td class="text-left">{{parseInt(data.var1)+parseInt(data.var2)+parseInt(data.var3)+parseInt(data.var4)+parseInt(data.var5)}}</td>
-                            <td class="text-left">{{data.var1 ? data.var1 : '-'}}</td>
+                            <td class="text-left">{{data.var1 ? data.var1 : "-"}}</td>
                             <td class="text-left">{{data.var2 ? data.var2 : '-'}}</td>
                             <td class="text-left">{{data.var3 ? data.var3 : '-'}}</td>
                             <td class="text-left">{{data.var4 ? data.var4 : '-'}}</td>

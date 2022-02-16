@@ -59,7 +59,7 @@ export default {
   data: () => ({
     items: [
       {
-        title: "Analítico",
+        title: "Reportes HIS",
         icon: "mdi-book-search",
         to: "/analitico/inicio"
       },
@@ -71,27 +71,12 @@ export default {
       },
 
       {
-        title: "Monitoreo Administrativo",
-        icon: "mdi-briefcase-search",
-        to: "/monitoreo-administrativo"
-      },
-
-      {
         title: "Seguimiento Administrativo",
         icon: "mdi-briefcase-search-outline",
         to: "/seguimiento-administrativo"
       },
 
-      {
-        title: "Disp. Según estratégia sanitaria",
-        icon: "mdi-clipboard-edit-outline",
-        to: "disponibilidad-segun-estrategia-sanitaria"
-      },
-      {
-        title: "Disp. Según estratégia sanitaria por Ipress",
-        icon: "mdi-map-search-outline",
-        to: "disponibilidad-segun-estrategia-sanitaria-ipress"
-      },
+     
       {
         title: "Condiciones",
         icon: "mdi-marker-check",

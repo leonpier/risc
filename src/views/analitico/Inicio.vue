@@ -89,7 +89,7 @@
             <act-etapa-de-vida-adulto tabla="tmp_adulto" v-if="reporte==5" ref="componente"></act-etapa-de-vida-adulto>
             <act-etapa-de-vida-joven tabla="tmp_joven" v-if="reporte==6" ref="componente"></act-etapa-de-vida-joven>
             <act-inmunizaciones tabla="RPT_INMUNIZACIONES" v-if="reporte==7" ref="componente"></act-inmunizaciones>
-            <act-materno v-if="reporte==8" ref="componente"></act-materno>
+            <act-materno tabla="TEMPORAL_MATERNO" v-if="reporte==8" ref="componente"></act-materno>
             <act-meta4 v-if="reporte==9" ref="componente"></act-meta4>
             <act-metales-pesados v-if="reporte==10" ref="componente"></act-metales-pesados>
             <act-nino tabla="RPT_NIÑO_2021" v-if="reporte==11" ref="componente"></act-nino>

@@ -1,19 +1,9 @@
 <template>
     <v-card>
-        <v-tabs background-color="primary" v-model="model" dark>
-            <v-tab :key="'1'" href="#tab-1">Reporte</v-tab>
+        <v-tabs background-color="primary"  dark>
             <v-tab :key="'2'" href="#tab-2">Filtros</v-tab>
         </v-tabs>
         <v-tabs-items v-model="model">
-            <v-tab-item :key="'1'" :value="'tab-1'">
-                <v-card flat>
-                    <v-card-text style="height: 200px">
-                        <v-radio-group v-model="dialogm1" column>
-                            <v-radio label="Salud Familiar" value="1"></v-radio>
-                        </v-radio-group>
-                    </v-card-text>
-                </v-card>
-            </v-tab-item>
             <v-tab-item :key="'2'" :value="'tab-2'">
                 <v-card flat>
                     <v-list subheader three-line>
@@ -110,16 +100,16 @@ export default ({
     data: () => ({
         datos: '',
         data: [],
-        model: 'tab-1',
-        dialogm1: '',
+        model: 'tab-2',
+        settings: '',
     }),
     setup() {
         
     },
-    props: ["establecimiento", "mes"],
+    props: ["message", "mes"],
     created() {},
     methods: {
-
+       
     },
     
     

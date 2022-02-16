@@ -67,35 +67,40 @@ export default {
       {
         title: "Gráfico",
         icon: "mdi-chart-box-outline",
-        to: "/pages/profile"
+        to: "/graficos"
       },
 
       {
         title: "Monitoreo Administrativo",
         icon: "mdi-briefcase-search",
-        to: "/pages/alerts"
+        to: "/monitoreo-administrativo"
       },
 
       {
         title: "Seguimiento Administrativo",
         icon: "mdi-briefcase-search-outline",
-        to: "/pages/icons"
+        to: "/seguimiento-administrativo"
       },
 
       {
         title: "Disp. Según estratégia sanitaria",
         icon: "mdi-clipboard-edit-outline",
-        to: "/pages/tables-simple"
+        to: "disponibilidad-segun-estrategia-sanitaria"
       },
       {
         title: "Disp. Según estratégia sanitaria por Ipress",
         icon: "mdi-map-search-outline",
-        to: "/pages/tables-simple"
+        to: "disponibilidad-segun-estrategia-sanitaria-ipress"
       },
       {
         title: "Condiciones",
-        icon: "mdi-map-search-outline",
-        to: "/maestros/Inicio"
+        icon: "mdi-marker-check",
+        to: "/condiciones/Inicio"
+      },
+      {
+        title: "Errores",
+        icon: "mdi-cancel",
+        to: "/errores/Inicio"
       }
     ]
   }),

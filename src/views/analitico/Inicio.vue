@@ -271,13 +271,14 @@ export default {
         })
     },
     async getEstablecimientos() {
-        await this.axios.get(this.$api_url + '/establecimientos',{
+        await this.axios.get(this.$api_url + '/filtros',{
             params: {
-                ids: this.search.microred.join(','),
-                idcats: this.search.categoria
+                unidad: this.search.unidad.join(','),
+                red: this.search.red.join(','),
+                microred: this.search.microred.join(','),
             }
         }).then(response => {
-            this.establecimientos = response.data
+            this.establecimientos = response.data.establecimiento
         })
     },
   }

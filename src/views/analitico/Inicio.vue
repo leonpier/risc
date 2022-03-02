@@ -92,21 +92,22 @@
             <act-materno tabla="TEMPORAL_MATERNO" v-if="reporte==8" ref="componente"></act-materno>
             <act-meta4 v-if="reporte==9" ref="componente"></act-meta4>
             <act-metales-pesados v-if="reporte==10" ref="componente"></act-metales-pesados>
-            <act-nino tabla="RPT_NIÑO_2021" v-if="reporte==11" ref="componente"></act-nino>
-            <act-planificacion-familiar v-if="reporte==12" ref="componente"></act-planificacion-familiar>
-            <act-promocion-de-la-salud v-if="reporte==13" ref="componente"></act-promocion-de-la-salud>
-            <act-promocion-de-la-salud-comunidades v-if="reporte==14" ref="componente"></act-promocion-de-la-salud-comunidades>
-            <act-promocion-de-la-salud-instituciones-ed v-if="reporte==15" ref="componente"></act-promocion-de-la-salud-instituciones-ed>
-            <act-promocion-de-la-salud-municipios v-if="reporte==16" ref="componente"></act-promocion-de-la-salud-municipios>
-            <act-salud-bucal tabla="vista_salud_bucal" v-if="reporte==17" ref="componente"></act-salud-bucal>
-            <act-salud-familiar tabla="TEMPORAL_SALUD_FAMILIAR" v-if="reporte==18" ref="componente"></act-salud-familiar>
-            <act-salud-mental tabla="tmp_salud_mental" v-if="reporte==19" ref="componente"></act-salud-mental>
-            <act-salud-ocular v-if="reporte==20" ref="componente"></act-salud-ocular>
-            <act-tbc v-if="reporte==21" ref="componente"></act-tbc>
-            <act-tele-medicina tabla="tmp_telemedicina" v-if="reporte==22" ref="componente"></act-tele-medicina>
-            <act-vida-sana v-if="reporte==23" ref="componente"></act-vida-sana>
-            <act-vih v-if="reporte==24" ref="componente"></act-vih>
-
+            <act-metaxenicas tabla="tmp_metaxenicas" v-if="reporte==11" ref="componente"></act-metaxenicas>
+            <act-nino tabla="RPT_NIÑO_2021" v-if="reporte==12" ref="componente"></act-nino>
+            <act-planificacion-familiar v-if="reporte==13" ref="componente"></act-planificacion-familiar>
+            <act-promocion-de-la-salud v-if="reporte==14" ref="componente"></act-promocion-de-la-salud>
+            <act-promocion-de-la-salud-comunidades v-if="reporte==15" ref="componente"></act-promocion-de-la-salud-comunidades>
+            <act-promocion-de-la-salud-instituciones-ed v-if="reporte==16" ref="componente"></act-promocion-de-la-salud-instituciones-ed>
+            <act-promocion-de-la-salud-municipios v-if="reporte==17" ref="componente"></act-promocion-de-la-salud-municipios>
+            <act-salud-bucal tabla="vista_salud_bucal" v-if="reporte==18" ref="componente"></act-salud-bucal>
+            <act-salud-familiar tabla="TEMPORAL_SALUD_FAMILIAR" v-if="reporte==19" ref="componente"></act-salud-familiar>
+            <act-salud-mental tabla="tmp_salud_mental" v-if="reporte==20" ref="componente"></act-salud-mental>
+            <act-salud-ocular v-if="reporte==21" ref="componente"></act-salud-ocular>
+            <act-tbc v-if="reporte==22" ref="componente"></act-tbc>
+            <act-tele-medicina tabla="tmp_telemedicina" v-if="reporte==23" ref="componente"></act-tele-medicina>
+            <act-vida-sana v-if="reporte==24" ref="componente"></act-vida-sana>
+            <act-vih v-if="reporte==25" ref="componente"></act-vih>
+            <act-zoonoticas tabla="tmp_zoo" v-if="reporte==26" ref="componente"></act-zoonoticas>
             <v-col cols="12" lg="12" v-if="!reporte" style="height: 800px">
                 <v-card>
                     <v-card-text>
@@ -130,6 +131,7 @@ import ActInmunizaciones from './Inmunizaciones/actividades.vue';
 import ActMaterno from './Materno/actividades.vue';
 import ActMeta4 from './Meta4/actividades.vue';
 import ActMetalesPesados from './MetalesPesados/actividades.vue';
+import ActMetaxenicas from './Metaxenicas/actividades.vue';
 import ActNino from './Niño/actividades.vue';
 import ActPlanificacionFamiliar from './PlanificacionFamiliar/actividades.vue';
 import ActPromocionDeLaSalud from './PromocionDeLaSalud/actividades.vue';
@@ -144,7 +146,7 @@ import ActTbc from './Tbc/actividades.vue';
 import ActTeleMedicina from './TeleMedicina/actividades.vue';
 import ActVidaSana from './VidaSana/actividades.vue';
 import ActVih from './Vih/actividades.vue';
-
+import ActZoonoticas from './Zoonoticas/actividades.vue';
 // FILTROS
 import filtroSeleccion from '../filtros/filtroSeleccion.vue';
 import FiltroReporte from '../filtros/filtroReporte.vue';
@@ -196,6 +198,7 @@ export default {
     ActMaterno,
     ActMeta4,
     ActMetalesPesados,
+    ActMetaxenicas,
     ActNino,
     ActPlanificacionFamiliar,
     ActPromocionDeLaSalud,
@@ -210,6 +213,7 @@ export default {
     ActTeleMedicina,
     ActVidaSana,
     ActVih,
+    ActZoonoticas,
     FiltroReporte
   },
   created() {

@@ -24,7 +24,11 @@ const router = new Router({
                     path: 'graficos',
                     component: () => import('@/views/graficos/inicio'),
                 },
-
+                {
+                    name: 'Tablero',
+                    path: 'tablero',
+                    component: () => import('@/views/tablero/inicio'),
+                },
                 {
                     name: 'Monitoreo Administrativo',
                     path: 'monitoreo-administrativo',

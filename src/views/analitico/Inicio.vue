@@ -106,7 +106,7 @@
             <act-tbc v-if="reporte==22" ref="componente"></act-tbc>
             <act-tele-medicina tabla="tmp_telemedicina" v-if="reporte==23" ref="componente"></act-tele-medicina>
             <act-vida-sana v-if="reporte==24" ref="componente"></act-vida-sana>
-            <act-vih v-if="reporte==25" ref="componente"></act-vih>
+            <act-vih tabla="vih" v-if="reporte==25" ref="componente"></act-vih>
             <act-zoonoticas tabla="tmp_zoon" v-if="reporte==26" ref="componente"></act-zoonoticas>
             <v-col cols="12" lg="12" v-if="!reporte" style="height: 800px">
                 <v-card>

@@ -65,9 +65,9 @@ export default {
       },
 
       {
-        title: "Gráfico",
+        title: "Tablero",
         icon: "mdi-chart-box-outline",
-        to: "/graficos"
+        to: "/tablero"
       },
 
       {

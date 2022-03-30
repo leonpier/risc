@@ -121,9 +121,6 @@
                                     <v-col cols="12" sm="6" md="4">
                                         <v-text-field v-model="condicion.fec_fin_apl" label="fec_fin_apl*" type="date" required></v-text-field>
                                     </v-col>
-                                    <v-col cols="12" sm="6" md="3">
-                                        <v-text-field v-model="condicion.tipo_control" label="tipo_control*" type="number" required></v-text-field>
-                                    </v-col>
                                     <v-col cols="12" sm="6" md="4">
                                         <v-select v-model="condicion.estado" :items="estados" item-text="name" item-value="id" label="Estado" required ></v-select>
                                     </v-col>

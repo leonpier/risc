@@ -1,9 +1,10 @@
 <template>
     <v-row >
        
-        <v-col md="12">
-            <v-simple-table dense style="overflow-x: auto !important;">
-                <template v-slot:default>
+        <v-col  md="12">
+         
+            <v-simple-table  dense>
+                <template  v-slot:default>
                     <thead>
                           <tr>
                            <th class="text-left tthh1" rowspan="3" colspan="2">
@@ -18,10 +19,9 @@
                              <th class="text-center tthh2" colspan="4">
                               total
                            </th>
+                         </tr>
 
-                       </tr>
-
-                    <tr>
+                          <tr>
                           <th class="text-center tthh4"  colspan="2">
                                01d - 11a
                            </th>
@@ -60,103 +60,103 @@
                                TRATADO
                            </th>
                         
-                    </tr>
+                        </tr>
                       
-<tr>
-    <th>DIAGNOSTICO</th>
-    <th>TRATADO</th>
-    <th>DIAGNOSTICO</th>
-    <th>TRATADO</th>
-    <th>DIAGNOSTICO</th>
-    <th>TRATADO</th>
-    <th>DIAGNOSTICO</th>
-    <th>TRATADO</th>
-    <th>DIAGNOSTICO</th>
-    <th>TRATADO</th>
+                         <tr>
+                         <th>DIAGNOSTICO</th>
+                         <th>TRATADO</th>
+                         <th>DIAGNOSTICO</th>
+                         <th>TRATADO</th>
+                         <th>DIAGNOSTICO</th>
+                         <th>TRATADO</th>
+                         <th>DIAGNOSTICO</th>
+                         <th>TRATADO</th>
+                         <th>DIAGNOSTICO</th>
+                         <th>TRATADO</th>
 
-    <th>DIAGNOSTICO</th>
-    <th>TRATADO</th>
-    <th>DIAGNOSTICO</th>
-    <th>TRATADO</th>
-    <th>DIAGNOSTICO</th>
-    <th>TRATADO</th>
-    <th>DIAGNOSTICO</th>
-    <th>TRATADO</th>
-    <th>DIAGNOSTICO</th>
-    <th>TRATADO</th>
+                         <th>DIAGNOSTICO</th>
+                         <th>TRATADO</th>
+                         <th>DIAGNOSTICO</th>
+                         <th>TRATADO</th>
+                         <th>DIAGNOSTICO</th>
+                         <th>TRATADO</th>
+                         <th>DIAGNOSTICO</th>
+                         <th>TRATADO</th>
+                         <th>DIAGNOSTICO</th>
+                         <th>TRATADO</th>
 
-<th>F</th>
-    <th>M</th>
-    <th>F</th>
-    <th>M</th>
-</tr>
+                         <th>F</th>
+                         <th>M</th>
+                         <th>F</th>
+                         <th>M</th>
+                         </tr>
 
-<tr>
-    <th class="text-left "  colspan="2">
-                               PERSONAS CON MANEJO SINDROMICO
-                           </th>
-    <td class="text-center">{{data.var1 ? data.var1 : "-"}}</td>
-    <td class="text-center">{{data.var11 ? data.var11 : "-"}}</td>
-    <td class="text-center">{{data.var2 ? data.var2 : "-"}}</td>
-    <td class="text-center">{{data.var12 ? data.var12 : "-"}}</td>
-    <td class="text-center">{{data.var3 ? data.var3 : "-"}}</td>
-    <td class="text-center">{{data.var13 ? data.var13 : "-"}}</td>
-    <td class="text-center">{{data.var4 ? data.var4 : "-"}}</td>
-    <td class="text-center">{{data.var14 ? data.var14 : "-"}}</td>
-    <td class="text-center">{{data.var5 ? data.var5 : "-"}}</td>
-    <td class="text-center">{{data.var15 ? data.var15 : "-"}}</td>
+                    <tr>
+                         <th class="text-left "  colspan="2">
+                                                       PERSONAS CON MANEJO SINDROMICO
+                                                  </th>
+                         <td class="text-center">{{data.var1 ? data.var1 : "-"}}</td>
+                         <td class="text-center">{{data.var11 ? data.var11 : "-"}}</td>
+                         <td class="text-center">{{data.var2 ? data.var2 : "-"}}</td>
+                         <td class="text-center">{{data.var12 ? data.var12 : "-"}}</td>
+                         <td class="text-center">{{data.var3 ? data.var3 : "-"}}</td>
+                         <td class="text-center">{{data.var13 ? data.var13 : "-"}}</td>
+                         <td class="text-center">{{data.var4 ? data.var4 : "-"}}</td>
+                         <td class="text-center">{{data.var14 ? data.var14 : "-"}}</td>
+                         <td class="text-center">{{data.var5 ? data.var5 : "-"}}</td>
+                         <td class="text-center">{{data.var15 ? data.var15 : "-"}}</td>
 
-    <td class="text-center">{{data.var6 ? data.var6 : "-"}}</td>
-    <td class="text-center">{{data.var16 ? data.var16 : "-"}}</td>
-    <td class="text-center">{{data.var7 ? data.var7 : "-"}}</td>
-    <td class="text-center">{{data.var17 ? data.var17 : "-"}}</td>
-    <td class="text-center">{{data.var8 ? data.var8 : "-"}}</td>
-    <td class="text-center">{{data.var18 ? data.var18 : "-"}}</td>
-    <td class="text-center">{{data.var9 ? data.var9 : "-"}}</td>
-    <td class="text-center">{{data.var19 ? data.var19 : "-"}}</td>
-    <td class="text-center">{{data.var10 ? data.var10 : "-"}}</td>
-    <td class="text-center">{{data.var20 ? data.var20 : "-"}}</td>
+                         <td class="text-center">{{data.var6 ? data.var6 : "-"}}</td>
+                         <td class="text-center">{{data.var16 ? data.var16 : "-"}}</td>
+                         <td class="text-center">{{data.var7 ? data.var7 : "-"}}</td>
+                         <td class="text-center">{{data.var17 ? data.var17 : "-"}}</td>
+                         <td class="text-center">{{data.var8 ? data.var8 : "-"}}</td>
+                         <td class="text-center">{{data.var18 ? data.var18 : "-"}}</td>
+                         <td class="text-center">{{data.var9 ? data.var9 : "-"}}</td>
+                         <td class="text-center">{{data.var19 ? data.var19 : "-"}}</td>
+                         <td class="text-center">{{data.var10 ? data.var10 : "-"}}</td>
+                         <td class="text-center">{{data.var20 ? data.var20 : "-"}}</td>
 
-      <td class="text-center">{{total1}}</td>
-      <td class="text-center">{{total2}}</td>
-      <td class="text-center">{{total3}}</td>
-      <td class="text-center">{{total4}}</td>
-</tr>
-                      
+                              <td class="text-center">{{total1}}</td>
+                              <td class="text-center">{{total2}}</td>
+                              <td class="text-center">{{total3}}</td>
+                              <td class="text-center">{{total4}}</td>
+                         </tr>
+                                             
 
-                      
-<tr>
-    <th class="text-left "  colspan="2">
-                              CASOS DE DESCARGA URETRAL
-                           </th>
-    <td class="text tthh3">{{ }}</td>
-    <td class="text tthh3">{{ }}</td>
-    <td class="text tthh3">{{ }}</td>
-    <td class="text tthh3">{{ }}</td>
-    <td class="text tthh3">{{ }}</td>
-    <td class="text tthh3">{{ }}</td>
-    <td class="text tthh3">{{ }}</td>
-    <td class="text tthh3">{{ }}</td>
-    <td class="text tthh3">{{ }}</td>
-    <td class="text tthh3">{{ }}</td>
+                                             
+                         <tr>
+                         <th class="text-left "  colspan="2">
+                                                       CASOS DE DESCARGA URETRAL
+                                                  </th>
+                         <td class="text tthh3">{{ }}</td>
+                         <td class="text tthh3">{{ }}</td>
+                         <td class="text tthh3">{{ }}</td>
+                         <td class="text tthh3">{{ }}</td>
+                         <td class="text tthh3">{{ }}</td>
+                         <td class="text tthh3">{{ }}</td>
+                         <td class="text tthh3">{{ }}</td>
+                         <td class="text tthh3">{{ }}</td>
+                         <td class="text tthh3">{{ }}</td>
+                         <td class="text tthh3">{{ }}</td>
 
-    <td class="text-center">{{data.var25 ? data.var25 : "-"}}</td>
-    <td class="text-center">{{data.var30 ? data.var30 : "-"}}</td>
-    <td class="text-center">{{data.var26 ? data.var26 : "-"}}</td>
-    <td class="text-center">{{data.var31 ? data.var31 : "-"}}</td>
-    <td class="text-center">{{data.var27 ? data.var27 : "-"}}</td>
-    <td class="text-center">{{data.var32 ? data.var32 : "-"}}</td>
-    <td class="text-center">{{data.var28 ? data.var28 : "-"}}</td>
-    <td class="text-center">{{data.var33 ? data.var33 : "-"}}</td>
-    <td class="text-center">{{data.var29 ? data.var29 : "-"}}</td>
-    <td class="text-center">{{data.var34 ? data.var34 : "-"}}</td>
+                         <td class="text-center">{{data.var25 ? data.var25 : "-"}}</td>
+                         <td class="text-center">{{data.var30 ? data.var30 : "-"}}</td>
+                         <td class="text-center">{{data.var26 ? data.var26 : "-"}}</td>
+                         <td class="text-center">{{data.var31 ? data.var31 : "-"}}</td>
+                         <td class="text-center">{{data.var27 ? data.var27 : "-"}}</td>
+                         <td class="text-center">{{data.var32 ? data.var32 : "-"}}</td>
+                         <td class="text-center">{{data.var28 ? data.var28 : "-"}}</td>
+                         <td class="text-center">{{data.var33 ? data.var33 : "-"}}</td>
+                         <td class="text-center">{{data.var29 ? data.var29 : "-"}}</td>
+                         <td class="text-center">{{data.var34 ? data.var34 : "-"}}</td>
 
-      <td class="text-center tthh3">{{ }}</td>
-      <td class="text-center">{{total5}}</td>
-      <td class="text-center tthh3">{{ }}</td>
-      <td class="text-center">{{total6}}</td>
-     
-</tr>
+                              <td class="text-center tthh3">{{ }}</td>
+                              <td class="text-center">{{total5}}</td>
+                              <td class="text-center tthh3">{{ }}</td>
+                              <td class="text-center">{{total6}}</td>
+                              
+                         </tr>
                  
               
 <tr>
@@ -187,12 +187,12 @@
     <td class="text tthh3">{{ }}</td>
     <td class="text tthh3">{{ }}</td>
 
-      <td class="text-center">{{total7}}</td>
-      <td class="text-center tthh3">{{ }}</td>
-      <td class="text-center">{{total8}}</td>
-      <td class="text-center tthh3">{{ }}</td>
-     
-</tr>
+                                   <td class="text-center">{{total7}}</td>
+                                   <td class="text-center tthh3">{{ }}</td>
+                                   <td class="text-center">{{total8}}</td>
+                                   <td class="text-center tthh3">{{ }}</td>
+                                   
+                              </tr>
         
 <tr>
     <th class="text-left "  colspan="2">
@@ -1783,9 +1783,7 @@
 
              </v-col>
 
-         
-        
-              <v-col md="9">
+         <v-col md="9">
             <v-simple-table dense>
                 <template v-slot:default>
                     <thead>
@@ -4272,7 +4270,7 @@
                     <thead>
                        <tr>
                            <th class="text-left tthh1" rowspan="3" colspan="2">
-                                 POBLACIÓN CLAVE: Hombres que tienen sexo con otros hombres / Trans 
+                                 POBLACIÓN CLAVE: Trabajadores Sexuales 
 
                            </th>
                              <th class="text-center tthh1" colspan="4" rowspan="1">
@@ -4486,7 +4484,7 @@
             </v-simple-table>
           </v-col>
 
-
+  
     </v-row>
 </template>
 
@@ -4526,12 +4524,10 @@ table {
 th, td {
   padding: 15px;
 }
-.v-data-table { 
-  overflow-x: auto !important;
-}
 
 
 </style>
+
 
 <script>
 export default ({

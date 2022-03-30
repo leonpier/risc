@@ -10,7 +10,7 @@ import axios from 'axios'
 Vue.use(VueAxios, axios)
 //URL BACKEND
     Vue.prototype.$api_url = 'http://sir.diresacajamarca.gob.pe:8050/api'
-//    Vue.prototype.$api_url = 'http://172.18.20.38:8050/api'
+  //  Vue.prototype.$api_url = 'http://172.18.20.38:8050/api'
 // FIN URL BACKEND
 
 // URL CUBE

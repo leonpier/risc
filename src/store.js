@@ -8,11 +8,17 @@ export default new Vuex.Store({
         Sidebar_drawer: null,
         Customizer_drawer: false,
         SidebarColor: 'white',
-        SidebarBg: ''
+        SidebarBg: '',
+        firstName: 'blue'
       },
     mutations: {
         SET_SIDEBAR_DRAWER (state, payload) {
             state.Sidebar_drawer = payload
+        },
+        cambio_color: function (state) {
+            if (localStorage.name) {
+                state.firstName = localStorage.name
+            }
         },
         SET_CUSTOMIZER_DRAWER (state, payload) {
             state.Customizer_drawer = payload

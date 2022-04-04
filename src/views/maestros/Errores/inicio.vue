@@ -181,8 +181,8 @@ export default {
             this.categorias = response.data.categoria
         })
     },
-    download() {
-        
+    download(id) {
+        window.open(this.$api_url + '/exportar/calidad/' + id , '_blank')
     },
     async getRedes() {
         await this.axios.get(this.$api_url + '/filtrosErrores',{

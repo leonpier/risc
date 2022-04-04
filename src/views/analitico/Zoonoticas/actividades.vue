@@ -1,15 +1,16 @@
 
 <template>
     <v-row >
+        <button @click='style_table'>click</button>
         <v-col md="12">
             <h4>A.- ATENDIDOS Y ATENCIONES EN SALUD FAMILIAR</h4>
             <v-simple-table dense>
                 <template v-slot:default>
                     <thead>
                         <tr>
-                            <th class="text-left"></th>
-                            <th class="text-left"></th>
-                            <th class="text-left">
+                            <th :class="'text-left th_style_' + $store.state.firstName"></th>
+                            <th :class="'text-left th_style_' + $store.state.firstName"></th>
+                            <th :class="'text-left th_style_' + $store.state.firstName">
                                 Total
                             </th>
                             <th class="text-left">
@@ -523,17 +524,22 @@
         </v-col>
     </v-row>
 </template>
+
 <script>
+import '../../../scss/style.scss';
 export default ({
     data: () => ({
         datos: '',
         data: [],
+        style: ''
     }),
     setup() {
         
     },
-    props: ["search", "tabla"],
-    created() {},
+    props: ["search", "tabla", "color"],
+    created() {
+        this.$store.commit('cambio_color');
+    },
     methods: {
         verifica(dt){
             if(dt){
@@ -546,6 +552,9 @@ export default ({
                 return ''
             }
             
+        },
+        style_table(){
+            console.log(this.$style_table + '-' + localStorage.name)
         },
         async getData(search) {
             await this.axios.get(this.$api_url + '/reporte/' + this.tabla + '/1-135',{

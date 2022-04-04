@@ -70,7 +70,7 @@
                             </v-col>
                             <v-col md="1" style="height: 10px; text-align:center">
                                 <v-card-text class="pa-2" >
-                                    <v-btn color="success" class="white--text" style="width:100%;">
+                                    <v-btn color="success" class="white--text" @click="download" style="width:100%;">
                                         <v-icon left dark>mdi-download</v-icon> Excel
                                     </v-btn>
                                 </v-card-text>
@@ -221,6 +221,9 @@ export default {
     // ActSaludFamiliar()
   },
   methods: {
+    download() {
+        window.open(this.$api_url + '/exportar/reportes_his/' + this.reporte , '_blank')
+    },
     validate () {
         if(this.$refs.form.validate()){
             if(typeof this.$refs.componente.getData !== "undefined"){
